@@ -1,0 +1,8 @@
+.lang {
+  display: none;
+}
+
+.lang.visible {
+  display: inline;
+  // @todo: visibility? font-size? etc?
+}
