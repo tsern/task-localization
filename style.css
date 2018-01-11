@@ -4,5 +4,13 @@
 
 .lang.visible {
   display: inline;
-  // @todo: visibility? font-size? etc?
+ }
+
+button {
+	width: 100px;
+	height: 25px;
+	background: #88dff9;
+	border: 2px solid blue;
+	border-radius: 10px;
 }
+

@@ -29,6 +29,20 @@ var applyLanguage = function (lang) {
 	currentLang = lang;
 }
 
+var selectRadio = function(lang) {
+	var radio;
+	
+	if (lang == 'ua') {
+		radio = document.querySelector('html body div label input.lang-ua');
+	} else if (lang == 'ru') {
+		radio = document.querySelector('html body div label input.lang-ru');
+	} else {
+		radio = document.querySelector('html body div label input.lang-eng');
+	}
+	
+	radio.checked = true;
+}
+
 var setCookie = function (name,value,days) {
     var expires = "";
     if (days) {
@@ -58,6 +72,8 @@ var getCurrentLanguage = function () {
 
 currentLang = getCurrentLanguage();
 applyLanguage(currentLang);
+
+selectRadio(currentLang);
 
 // $<prefix> == DOMElement
 var $save = document.querySelector('html body button#save')
