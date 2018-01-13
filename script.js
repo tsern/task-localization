@@ -31,15 +31,7 @@ var applyLanguage = function (lang) {
 
 var selectRadio = function(lang) {
 	var radio;
-	
-	if (lang == 'ua') {
-		radio = document.querySelector('html body div label input.lang-ua');
-	} else if (lang == 'ru') {
-		radio = document.querySelector('html body div label input.lang-ru');
-	} else {
-		radio = document.querySelector('html body div label input.lang-eng');
-	}
-	
+	radio = document.querySelector('html body div label input.lang-' + lang);
 	radio.checked = true;
 }
 
